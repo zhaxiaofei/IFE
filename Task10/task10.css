@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wraper {
+  border: 1px solid red;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wraper>div {
+  width: 150px;
+  border: 1px solid;
+  margin-bottom: 20px;
+  ;
+}
+.child1 {
+  height: 120px;
+}
+.child2 {
+  height: 100px;
+}
+.child3 {
+  height: 40px;
+}
+.child4 {
+  height: 200px;
+}
+@media (max-width: 640px) {
+  .wraper {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .child4 {
+    order: -2;
+  }
+}
